@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Test</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <!-- Calculator container -->
+    <div class="calculator p-6 bg-white rounded-3xl shadow-2xl w-full max-w-sm mx-4">
+
+        <!-- Calculator display -->
+        <input type="text" id="display"
+            class="w-full text-right p-4 mb-4 text-4xl font-light rounded-2xl bg-gray-200 border-none outline-none"
+            value="0" readonly>
+
+        <!-- Buttons grid -->
+        <div class="grid grid-cols-4 gap-4">
+            <!-- Row 1 -->
+            <button class="col-span-2 calc-button clear-button" data-value="clear">Clear</button>
+            <button class="calc-button operator-button" data-value="/">/</button>
+            <button class="calc-button operator-button" data-value="*">&times;</button>
+
+            <!-- Row 2 -->
+            <button class="calc-button number-button" data-value="7">7</button>
+            <button class="calc-button number-button" data-value="8">8</button>
+            <button class="calc-button number-button" data-value="9">9</button>
+            <button class="calc-button operator-button" data-value="-">-</button>
+
+            <!-- Row 3 -->
+            <button class="calc-button number-button" data-value="4">4</button>
+            <button class="calc-button number-button" data-value="5">5</button>
+            <button class="calc-button number-button" data-value="6">6</button>
+            <button class="calc-button operator-button" data-value="+">+</button>
+
+            <!-- Row 4 -->
+            <button class="calc-button number-button" data-value="1">1</button>
+            <button class="calc-button number-button" data-value="2">2</button>
+            <button class="calc-button number-button" data-value="3">3</button>
+            <button class="row-span-2 calc-button equals-button" data-value="=">=</button>
+
+            <!-- Row 5 -->
+            <button class="col-span-2 calc-button number-button" data-value="0">0</button>
+            <button class="calc-button decimal-button" data-value=".">.</button>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>

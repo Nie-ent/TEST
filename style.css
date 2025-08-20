@@ -1,0 +1,60 @@
+        /* Custom font for a modern look */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Basic button styles to apply to all buttons */
+        .calc-button {
+            padding: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 500;
+            border-radius: 9999px;
+            /* Fully rounded buttons */
+            transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+            cursor: pointer;
+            box-shadow: 0 4px 6px -1px rgba(216, 139, 139, 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            user-select: none;
+            /* Prevent text selection */
+        }
+
+        /* Hover effect for buttons */
+        .calc-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+
+        /* Active/click effect for buttons */
+        .calc-button:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        /* Styles for number and decimal buttons */
+        .number-button,
+        .decimal-button {
+            background-color: #e5e7eb;
+            color: #374151;
+        }
+
+        /* Styles for operator buttons */
+        .operator-button {
+            background-color: #fcd34d;
+            color: #1f2937;
+        }
+
+        /* Styles for the equals button */
+        .equals-button {
+            background-color: #34d399;
+            color: white;
+        }
+
+        /* Styles for the clear button */
+        .clear-button {
+            background-color: #ef4444;
+            color: white;
+        }
